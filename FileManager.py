@@ -3,10 +3,6 @@
 # this file handles excel operations
 # parameters and return types specified for each method in case we need to switch to another file type in the future
 
-# excel read and write libraries
-# IMPORTANT VERSION CHECK! >> xlrd==1.2.0
-
-# from openpyxl import Workbook
 import openpyxl
 
 

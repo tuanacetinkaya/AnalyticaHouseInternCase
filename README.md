@@ -39,9 +39,11 @@ Multithreading is an amazing way to handle great number of requests. I realized 
 
 ##### Without Multithreading
 ![alt text](https://prnt.sc/yz62sn)
+[<img src="https://prnt.sc/yz62sn">](https://prnt.sc)
 
 ##### With Multithreading
 ![alt text](https://prnt.sc/yz65z1)
+[![Foo](https://prnt.sc/yz65z1)](https://prnt.sc)
   
 ### Please briefly explain what is API and how it works
 API is an abstract interface to communicate with other application's attributes and dataflows, in another words their back-ends, without having to reach their source code and database. Normally applications store their data in physical servers and we need to access these in order to trade and read data from them. However that would endanger the application since it would be possible for anyone to mess with the datas and corrupt files. At that stage, an API access these servers on our behalf and secures the database from misusage of accessors by handling the data flow. 

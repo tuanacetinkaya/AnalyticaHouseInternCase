@@ -5,8 +5,9 @@
 
 # excel read and write libraries
 # IMPORTANT VERSION CHECK! >> xlrd==1.2.0
-import xlrd
-from openpyxl import Workbook
+
+# from openpyxl import Workbook
+import openpyxl
 
 
 # Report File is formatted as below:
@@ -23,7 +24,7 @@ class ExcelParser:
         self.report_file_name = report_file_name
         self.report_sheet_name = report_sheet_name
 
-        self.workbook = Workbook()
+        self.workbook = openpyxl.Workbook()
         self.sheet = self.workbook.active
 
     # @param file_path: excel file path with A column containing product links
@@ -33,10 +34,11 @@ class ExcelParser:
         try:
             # alternative
             # df = pd.read_excel("myFile.xlsx", sheet_name=2, engine='openpyxl')
-            book = xlrd.open_workbook(self.data_file_name)
-            sheet = book.sheet_by_name(data_sheet_name)
-            for cell in sheet.col(0):
-                links.append(website + cell.value)
+
+            book = openpyxl.load_workbook(self.data_file_name)
+            sheet = book.active
+            for row_idx in range(sheet.max_row):
+                links.append(website + sheet.cell(row=row_idx + 1, column=1).value)
 
         except Exception as e:
             print(e)

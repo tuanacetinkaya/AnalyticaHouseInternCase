@@ -1,4 +1,4 @@
-# import time # TODO: time import is here if we need to check time scaling at line 72
+# import time  # TODO: time import is here if we need to check time scaling at line 72
 from urllib.request import urlopen as request  # url request
 from bs4 import BeautifulSoup as Soup  # web scraper
 
@@ -73,7 +73,7 @@ def main():
     # t0 = time.time()
     multithreading(parser, product_links)
     # t1 = time.time()
-    # print(f"{t1 - t0} seconds to download {len(product_links)} stories.")
+    # print(f"{t1 - t0} seconds to scrape {len(product_links)} products.")
 
     parser.close_report_file()
 

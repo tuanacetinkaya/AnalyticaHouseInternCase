@@ -1,10 +1,10 @@
 # import time  # TODO: time import is here if we need to check time scaling at line 72
 from urllib.request import urlopen as request  # url request
 from bs4 import BeautifulSoup as Soup  # web scraper
+import concurrent.futures  # fasten the process by multithreading
 
 from FileManager import ExcelParser  # file operations
 
-import concurrent.futures  # fasten the process by multithreading
 
 MAX_THREADS = 30  # limit the number of threads
 

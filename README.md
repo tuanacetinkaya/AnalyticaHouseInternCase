@@ -2,22 +2,22 @@
 Summer internship application challenge for applicants. Main goal is to use web scraping in python to gather data from given set of product links. 
 
 ## Used Tech-Stack
-#### openpyxl
+### openpyxl
 For reading and manipulating excel documents.
 ```
 sudo pip3 install openpyxl
 ```
 
-#### BeautifulSoup from bs4
+### BeautifulSoup from bs4
 To scrape html freely
 ```
 sudo pip3 install bs4
 ```
 
-#### urlopen from urllib.request
+### urlopen from urllib.request
 To request and open product websites
 
-#### concurrent.futures
+### concurrent.futures
 For fasten the scraping process by using multithreading
 
 

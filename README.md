@@ -39,7 +39,7 @@ Multithreading is an amazing way to handle great number of requests. I realized 
 
 ##### Without Multithreading
 ![alt text](https://prnt.sc/yz62sn)
-[<img src="https://prnt.sc/yz62sn">](https://prnt.sc)
+<a href="https://prnt.sc/yz62sn" rel="some text">![Foo](https://prnt.sc/yz62sn)</a>
 
 ##### With Multithreading
 ![alt text](https://prnt.sc/yz65z1)
